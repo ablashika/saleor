@@ -25,8 +25,8 @@ const FeatureBox = ({ icon, title }) => (
 
 
       animate={{
-        x: [-400, 400],
-        transition: { duration: 10, ease:'linear', repeat: Infinity, repeatType: 'loop' },
+        x: [-800, 100],
+        transition: { duration: 20, ease:'linear', repeat: Infinity, repeatType: 'loop' },
       }}
       whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
 
@@ -44,24 +44,7 @@ const FeatureBoxDetails = () => {
     { icon: faMapMarkerAlt, title: "Address validation" },
     { icon: faFileAlt, title: "Order quotes" },
     { icon: faMoneyBill, title: "Pay later" },
-    { icon: faTruck, title: "Multi-fulfillment" },
-     { icon: faCashRegister, title: "Cash on delivery" },
-    { icon: faSync, title: "Subscriptions" },
-    { icon: faMapMarkerAlt, title: "Address validation" },
-    { icon: faFileAlt, title: "Order quotes" },
-    { icon: faMoneyBill, title: "Pay later" },
-    { icon: faTruck, title: "Multi-fulfillment" },
-    { icon: faCreditCard, title: "Split payments" },
-    { icon: faFileInvoiceDollar, title: "Single page" },
-    { icon: faBoxes, title: "Multi-gateway" },
-    { icon: faFileSignature, title: "Pre-orders" },
-    { icon: faHandshake, title: "Order approvals" },
-    { icon: faCommentDollar, title: "Custom payment" },
-    { icon: faStore, title: "Pick-up in store" },
-    { icon: faCalendarCheck, title: "Reservations" },
-    { icon: faEnvelopeOpenText, title: "Pay by invoice" },
-    { icon: faCheckSquare, title: "Express checkout" },
-    { icon: faCashRegister, title: "Cash on delivery" },
+     
   ];
 
 
@@ -89,10 +72,7 @@ const FeatureBoxDetails = () => {
             flexDirection: 'row',
             height: '150px',
             width:'100%',
-            whiteSpace: 'nowrap',
-            
-            
-        
+            // whiteSpace: 'nowrap', 
            
           }}
              >

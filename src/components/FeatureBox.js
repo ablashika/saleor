@@ -54,7 +54,7 @@ const FeatureBoxDetails = () => {
   useEffect(() => {
     const updateScroll = () => {
       scrollY.set(window.scrollY);
-      controls.start({ x: [-400, 400] }); // Adjust the animation values
+      controls.start({ x: [-400, 400] }); 
     };
 
     window.addEventListener('scroll', updateScroll);

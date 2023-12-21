@@ -1,6 +1,6 @@
 import './App.css';
 import { Row,Col,Container } from 'react-bootstrap';
-import FeatureBoxDetails from './components/FeatureBox';
+import FeatureBoxDetails from './components/FeatureBoxDetails';
 
 function App() {
   return (

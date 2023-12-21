@@ -7,7 +7,7 @@ import {
   faStore, faCalendarCheck, faEnvelopeOpenText, faCheckSquare, faCashRegister,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { motion,useAnimation, useMotionValue} from 'framer-motion';
+import { motion} from 'framer-motion';
 
 const FeatureBox = ({ icon, title }) => (
   <Col md={4}  style={{marginLeft:"70px"}}>
@@ -25,7 +25,7 @@ const FeatureBox = ({ icon, title }) => (
 
 
       animate={{
-        x: [-400, 100],
+        x: [-400, 600],
         transition: { duration: 20, ease:'linear', repeat: Infinity, repeatType: 'loop' },
       }}
       whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
@@ -47,20 +47,6 @@ const FeatureBoxDetails = () => {
      
   ];
 
-
-  const scrollY = useMotionValue(0);
-  const controls = useAnimation();
-
-  useEffect(() => {
-    const updateScroll = () => {
-      scrollY.set(window.scrollY);
-      controls.start({ x: [-400, 400] }); 
-    };
-
-    window.addEventListener('scroll', updateScroll);
-    return () => window.removeEventListener('scroll', updateScroll);
-  }, [scrollY, controls]);
-
   return (
     <Container>
       <Row className='feature-container' >
@@ -77,7 +63,7 @@ const FeatureBoxDetails = () => {
           }}
              >
           {features.map(({ icon, title }, index) => (
-            <FeatureBox key={index} icon={icon} title={title} control={controls}  />
+            <FeatureBox key={index} icon={icon} title={title}  />
           ))}
         </motion.div>
       </Row>

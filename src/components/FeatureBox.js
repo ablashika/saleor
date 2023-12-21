@@ -25,7 +25,7 @@ const FeatureBox = ({ icon, title }) => (
 
 
       animate={{
-        x: [-800, 100],
+        x: [-400, 100],
         transition: { duration: 20, ease:'linear', repeat: Infinity, repeatType: 'loop' },
       }}
       whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
